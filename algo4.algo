@@ -1,0 +1,22 @@
+ALGORITHM algo4
+VAR
+ arr  : ARRAY_OF INTEGER[20];
+ i,j,test
+BEGIN
+    
+  n:= arr.length
+ FOR i FROM 1 TO n STEP 1  DO
+  test= arr[i];  
+        j = i - 1;  
+    WHILE (j>0 and arr[j] > test) DO
+     arr[j+1] = arr[j];
+     j:= j - 1 ;
+     arr[j+1] := test ;
+        
+    END_WHILE
+      
+ END_FOR
+
+
+END
+
